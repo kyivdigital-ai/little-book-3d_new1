@@ -1,5 +1,5 @@
 :root {
-  background: #e1cbd5;
+  background: #000000;
   color: #241b20;
   font-family: Arial, Helvetica, sans-serif;
   font-synthesis: none;
@@ -19,12 +19,12 @@ body,
 }
 
 html {
-  background: #e1cbd5;
+  background: #000000;
 }
 
 body {
   overflow-x: hidden;
-  background: #e1cbd5;
+  background: #000000;
 }
 
 main {
@@ -38,7 +38,7 @@ canvas {
 .book-experience {
   position: relative;
   height: 250svh;
-  background: #e1cbd5;
+  background: #000000;
 }
 
 .book-experience__sticky {
