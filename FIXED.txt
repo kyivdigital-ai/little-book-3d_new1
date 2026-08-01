@@ -1,0 +1,10 @@
+FIXED VERSION
+
+Changes:
+1. Back-cover text is no longer mirrored.
+2. Front, back and spine use unlit texture materials so the original pink
+   color remains accurate instead of becoming pale under WebGL lighting.
+3. The page background now matches the cover pink more closely.
+
+Upload all files from this folder to GitHub, replacing the old files.
+Then redeploy on Vercel without build cache.
