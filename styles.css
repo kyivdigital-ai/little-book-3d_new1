@@ -1,6 +1,6 @@
 :root {
-  background: #000000;
-  color: #241b20;
+  background: #6B1028;
+  color: #ECCDD8;
   font-family: Arial, Helvetica, sans-serif;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -19,12 +19,12 @@ body,
 }
 
 html {
-  background: #000000;
+  background: #6B1028;
 }
 
 body {
   overflow-x: hidden;
-  background: #000000;
+  background: #6B1028;
 }
 
 main {
