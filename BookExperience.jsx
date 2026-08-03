@@ -26,7 +26,7 @@ function prepareTexture(texture, renderer, options = {}) {
   if (isColor) texture.colorSpace = THREE.SRGBColorSpace
 
   texture.anisotropy = Math.min(
-    12,
+    16,
     renderer.capabilities.getMaxAnisotropy(),
   )
   texture.wrapS = repeat
