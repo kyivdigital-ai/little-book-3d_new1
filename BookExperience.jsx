@@ -343,7 +343,7 @@ export default function BookExperience() {
     <section className="book-experience">
       <Canvas
         shadows
-        dpr={[1, 1.65]}
+        dpr={[1.5, 3]}
         camera={{
           position: [0, 0.02, 9.1],
           fov: 30,
