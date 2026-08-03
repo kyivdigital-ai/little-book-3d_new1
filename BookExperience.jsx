@@ -147,15 +147,18 @@ function Book() {
     document.body.style.cursor = 'grabbing'
   }
 
-  useFrame((_, delta) => {
+  useFrame((state, delta) => {
     if (!book.current) return
 
-    // Static three-quarter position. No scroll reveal and no entrance animation.
+const autoRotation = state.clock.getElapsedTime() * 0.12
+  
     const targetRotationX =
   -pointer.current.y * 0.025 + drag.current.rotationX
 
 const targetRotationY =
-  pointer.current.x * 0.04 + drag.current.rotationY
+  autoRotation +
+  pointer.current.x * 0.04 +
+  drag.current.rotationY
 
 const targetRotationZ = 0
 
