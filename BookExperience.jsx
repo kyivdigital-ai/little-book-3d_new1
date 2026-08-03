@@ -152,10 +152,12 @@ function Book() {
 
     // Static three-quarter position. No scroll reveal and no entrance animation.
     const targetRotationX =
-      -0.08 - pointer.current.y * 0.045 + drag.current.rotationX
-    const targetRotationY =
-      0.42 + pointer.current.x * 0.065 + drag.current.rotationY
-    const targetRotationZ = -0.018 + pointer.current.x * 0.008
+  -pointer.current.y * 0.025 + drag.current.rotationX
+
+const targetRotationY =
+  pointer.current.x * 0.04 + drag.current.rotationY
+
+const targetRotationZ = 0
 
     book.current.rotation.x = THREE.MathUtils.damp(
       book.current.rotation.x,
@@ -202,7 +204,7 @@ function Book() {
     <group
       ref={book}
       position={[baseX, 0, 0]}
-      rotation={[-0.08, 0.42, -0.018]}
+      rotation={[0, 0, 0]}
       scale={baseScale}
       onPointerDown={startDrag}
       onPointerOver={(event) => {
